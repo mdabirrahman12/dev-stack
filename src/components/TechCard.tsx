@@ -17,19 +17,19 @@ const TechCard = ({ tech }: TechCardProps) => {
       </div>
 
       {/* Name */}
-      <h2 className="text-sm font-bold mt-3">
+      <h2 className="text-2xl font-bold mt-1">
         {tech.name}
       </h2>
 
       {/* Description */}
-      <p className="text-[10px] text-gray-500 mt-1 leading-4">
+      <p className="text-[14px] text-gray-500 mt-1 leading-4">
         {tech.description}
       </p>
 
       {/* Details */}
       <div className="flex justify-between items-center gap-1 mt-3">
 
-        <span className="bg-gray-100 text-gray-600 px-1.5 py-1 rounded text-[9px]">
+        <span className="bg-gray-100 text-gray-600 px-2.5 py-1 rounded text-[11px]">
           {tech.category}
         </span>
 

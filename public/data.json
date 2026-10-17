@@ -74,7 +74,7 @@
     "name": "PostgreSQL",
     "category": "Database",
     "description": "A powerful open-source relational database known for reliability, robustness, and SQL performance.",
-    "icon": "https://icon.icepanel.io/Technology/svg/PostgreSQL.svg",
+    "icon": "https://svgicons.com/img/27515/postgresql.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "Industry Standard"
@@ -114,7 +114,7 @@
     "name": "Tailwind CSS",
     "category": "Styling",
     "description": "A utility-first CSS framework for rapidly building custom designs without leaving your HTML.",
-    "icon": "https://icon.icepanel.io/Technology/svg/TailwindCSS.svg",
+    "icon": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/tailwindcss.svg",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
     "badge": "Trending"

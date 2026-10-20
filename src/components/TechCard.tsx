@@ -1,7 +1,21 @@
+import toast from "react-hot-toast";
 
-const TechCard = ({ tech }: TechCardProps) => {
+const TechCard = ({tech, yourStack, setYourStack}) => {
+  // const isStack = yourStack.some((iss) => iss.id === tech.id);
+  // const isStack = yourStack.some((iss) => iss.id === tech.id);
+  const handleYourStack = () =>{
+    if (isStack) return toast.error("Already added");
+    setYourStack([...yourStack,tech]);
+    toast.success("Technology added!")
+  }
+    console.log(handleYourStack)
+  //   console.log(tech);
+  //   console.log(yourStack);
+  //   console.log(setYourStack);
+  // }
   return (
-    <div className="bg-white border border-gray-100 rounded-xl p-3">
+    <div onClick={handleYourStack}
+    className="bg-white border border-gray-100 rounded-xl p-3">
 
       {/* Icon and Badge */}
       <div className="flex justify-between items-center">

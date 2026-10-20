@@ -4,9 +4,9 @@ const Hero = () => {
     <section className="container mx-auto bg-base-100">
       <div className="hero-content mx-auto max-w flex">
         <div className=" max-w text-center lg:text-left">
-          <h1 className="font-extrabold tracking-tight text-base-content sm:text-1xl lg:text-[4rem] lg:leading-[1.1]">
+          <h1 className="text-7xl font-extrabold tracking-tight text-base-content">
             Build Your Ideal
-            <span className= "block bg-linear-to-r from-orange-500 via-rose-500 to-purple-600 bg-clip-text text-transparent">
+            <span className="block bg-linear-to-r from-orange-500 via-rose-500 to-purple-600 bg-clip-text text-transparent">
               Development Stack
             </span>
           </h1>
@@ -17,12 +17,11 @@ const Hero = () => {
             fits your next project.
           </p>
 
-          <div className="flex items-center justify-center gap-10 lg:justify-start">
-            <a href="#" className=" rounded-lg bg-linear-to-r from-orange-500 via-rose-500 to-purple-600 px-6 py-3 
-            text-sm font-semibold text-amber-50">
+          <div className="flex items-center justify-center gap-3 lg:justify-start">
+            <a href="#" className=" rounded-lg bg-linear-to-r from-orange-500 via-rose-500 to-purple-600  text-sm font-semiboldsm font-semibold px-6 py-3 text-amber-50">
               Explore Technologies
             </a>
-            <a href="#" className='btn'>
+            <a href="#" className=' py-2.5 px-10 bg-white border border-gray-200 rounded-xl'>
               Learn More
             </a>
           </div>

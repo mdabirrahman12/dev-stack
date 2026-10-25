@@ -14,7 +14,7 @@ const allTech = ({allTech,stack,setStack}) => {
                 ))}
             </div>
             <div className='  bg-white border border-gray-100 rounded-xl p-8 col-span-12 md:col-span-5'>
-                <h1 className='text'>Your Stack</h1>
+            <h1 className='text-2xl'>Your Stack</h1>
                 <p className='text-gray-400 whitespace-nowrap py-4'>No technologies selected yet.</p>
                 <button className='"bg-white border border-gray-100 rounded-xl p-3 text-gray-500'>Your stack is empty.</button>
 

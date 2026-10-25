@@ -7,12 +7,10 @@ const TechCard = ({tech,stack,setStack}) => {
     setStack((previousStack) => [...previousStack, tech,]);
     toast.success("Technology added!")
   }
-
   return (
     <div 
     onClick={handleAddToStack}
-    className="bg-white border border-gray-100 rounded-xl p-3">
-
+    className={`bg-white border border-gray-100 rounded-xl p-3 ${isAlreadyAdded ? "cursor-not-allowed" : "cursor-pointer"}`}>
       {/* Icon and Badge */}
       <div className="flex justify-between items-center">
         <img
@@ -54,8 +52,8 @@ const TechCard = ({tech,stack,setStack}) => {
       </div>
 
       {/* Button */}
-      <button className="bg-gray-950 text-white w-full rounded-md py-2 mt-3 text-[10px]">
-        Add to Stack
+      <button className={ `text-white w-full rounded-md py-2 mt-3 text-[10px] ${isAlreadyAdded ? "bg-green-950" : "bg-gray-950" } `}>
+        {isAlreadyAdded ? " Added to Stack" : "Add to Stack"}
       </button>
 
     </div>

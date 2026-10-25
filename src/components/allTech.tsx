@@ -1,12 +1,15 @@
 import TechCard from './TechCard';
 
-const allTech = ({allTech,yourStack},setYourStack) => {
+const allTech = ({allTech,stack,setStack}) => {
     // console.log(allTech);
     return (
         <div className='flex col-span-12 md:col-span-9 gap-8'>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
                 {allTech.map((tech) =>(
-                    <TechCard key={tech.id} tech={tech}/>
+                    <TechCard key={tech.id}
+                     setStack={setStack} 
+                     stack={stack} 
+                    tech={tech}/>
 
                 ))}
             </div>

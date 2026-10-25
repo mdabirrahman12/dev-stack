@@ -27,7 +27,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className=" relative mx-auto w-full max-w-lg">
+        <div className="col-auto">
           <img src={heroImg} alt="" />
         </div>
 

@@ -1,5 +1,5 @@
 import { FiAlignJustify, FiMinusCircle  } from "react-icons/fi";
-import React, {useState} from "react";
+import {useState} from "react";
 import Logo from '../assets/logo-text.png'
 const Navbar = () => {
   const[isMenuOpen,setIsMenuOpen] = useState(false);

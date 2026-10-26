@@ -1,26 +1,34 @@
-import TechCard from './TechCard';
+import toast from "react-hot-toast";
+import TechCard from "./TechCard";
+import Sidebar from "./Sidebar";
+const AllTech = ({ allTech, stack, setStack }:AllTechProps) => {
+  const handleRemoveFromStack = (id: string) => {
+    setStack((previousStack) => previousStack.filter((item) => item.id !== id));
+    toast("Technology removed!");
+  };
 
-const allTech = ({allTech,stack,setStack}) => {
-    // console.log(allTech);
-    return (
-        <div className='flex col-span-12 md:col-span-9 gap-8'>
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
-                {allTech.map((tech) =>(
-                    <TechCard key={tech.id}
-                     setStack={setStack} 
-                     stack={stack} 
-                    tech={tech}/>
+  const handleRemoveAll = () => {
+    setStack([]);
+    toast.error("All technologies removed!");
+  };
 
-                ))}
-            </div>
-            <div className='  bg-white border border-gray-100 rounded-xl p-8 col-span-12 md:col-span-5'>
-            <h1 className='text-2xl'>Your Stack</h1>
-                <p className='text-gray-400 whitespace-nowrap py-4'>No technologies selected yet.</p>
-                <button className='"bg-white border border-gray-100 rounded-xl p-3 text-gray-500'>Your stack is empty.</button>
-
-            </div>
-        </div>
-    );
+  return (
+    <div className="grid gap-2 lg:grid-cols-12 ">
+      <div className="grid gap-1 md:grid-cols-2 lg:col-span-9 lg:grid-cols-3">
+        {allTech.map((tech) => (
+          <TechCard key={tech.id} tech={tech} stack={stack} setStack={setStack} />
+        ))}
+      </div>
+      <div className="lg:col-span-3">
+        <Sidebar
+          stack={stack}
+          handleRemoveFromStack={handleRemoveFromStack}
+          handleRemoveAll={handleRemoveAll}
+        />
+      </div>
+    </div>
+  );
 };
 
-export default allTech;
+export default AllTech;
+

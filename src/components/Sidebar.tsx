@@ -3,7 +3,7 @@ import { FiX } from "react-icons/fi";
 const Sidebar = ({ stack, handleRemoveFromStack, handleRemoveAll }: SidebarProps) => {
   return (
       <div className="flex flex-col gap-1 rounded-2xl border border-gray-100 bg-white p-5">
-        <h3 className="text-base font-bold leading-6">Your Stack</h3>
+        <h3 className="text-base font-bold">Your Stack</h3>
 
         <p className="mb-3 text-gray-400">
           {stack.length === 0
@@ -12,7 +12,7 @@ const Sidebar = ({ stack, handleRemoveFromStack, handleRemoveAll }: SidebarProps
         </p>
 
         {stack.length === 0 && (
-          <div className="rounded-xl bg-gray-50 p-6 text-center text-xs text-gray-500">
+          <div className="rounded-xl bg-gray-50 p-6 text-center text-gray-500">
             Your stack is empty.
           </div>
         )}
